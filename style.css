@@ -1,0 +1,23 @@
+.heading{
+    text-align: center;
+    font-size: 8rem;
+    margin-bottom: 70px;
+}
+
+.input-container{
+    display: flexbox;
+    justify-content: space-around;
+    padding-left: 25%;
+    padding-right: 10%;
+}
+
+#city{
+    width: 600px;
+    height: 50px;
+}
+
+#searchButton{
+    width: 70px;
+    height: 55px;
+    font-weight: bolder;
+}
