@@ -1,24 +1,27 @@
-body{
+/* Base styles (for desktop) */
+body {
     background-color: rgb(179, 155, 125);
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    margin: 0;
+    padding: 0;
 }
 
-.heading{
+.heading {
     text-align: center;
     font-size: 8rem;
     margin-bottom: 70px;
 }
 
-.input-container{
-    display: flexbox;
-    justify-content: space-around;
-    padding-left: 25%;
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
     padding-right: 10%;
     margin-bottom: 5%;
-   
 }
 
-#city{
-    width: 700px;
+#city {
+    width: 70%;
     height: 50px;
     border-radius: 5px;
     border: none;
@@ -26,8 +29,8 @@ body{
     margin-right: 5px;
 }
 
-#searchButton{
-    width: 75px;
+#searchButton {
+    width: 15%;
     height: 50px;
     font-weight: bolder;
     margin-top: 0%;
@@ -38,27 +41,93 @@ body{
     box-shadow: 0px 0px 3.5px rgb(79, 75, 61);
 }
 
-.weatherDisplay{
+.weatherDisplay {
     margin-top: 70%;
     padding-top: 100px;
 }
 
-h2{
+h2 {
     text-align: center;
     font-size: 90px;
     font-weight: bold;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
-h3{
+h3 {
     text-align: center;
     font-size: 70px;
     font-weight: bolder;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
-p{
+p {
     text-align: center;
     font-size: 30px;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+/* Media Queries for smaller screens (Mobile) */
+@media (max-width: 600px) {
+    .heading {
+        font-size: 4rem; /* Smaller font size for mobile */
+        margin-bottom: 30px;
+    }
+
+    .input-container {
+        flex-direction: column;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    #city {
+        width: 100%; /* Full width for mobile */
+        margin-right: 0;
+        margin-bottom: 10px; /* Add space between input and button */
+    }
+
+    #searchButton {
+        width: 100%; /* Full width for mobile */
+        margin-top: 10px;
+    }
+
+    h2 {
+        font-size: 50px; /* Smaller font size */
+    }
+
+    h3 {
+        font-size: 40px; /* Smaller font size */
+    }
+
+    p {
+        font-size: 20px; /* Smaller font size */
+    }
+}
+
+/* Media Queries for tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .heading {
+        font-size: 6rem; /* Slightly smaller for tablet */
+    }
+
+    .input-container {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    #city {
+        width: 70%; /* Adjust width for tablet */
+    }
+
+    #searchButton {
+        width: 25%; /* Adjust width for tablet */
+    }
+
+    h2 {
+        font-size: 70px; /* Slightly smaller for tablet */
+    }
+
+    h3 {
+        font-size: 60px; /* Slightly smaller for tablet */
+    }
+
+    p {
+        font-size: 25px; /* Slightly smaller for tablet */
+    }
 }
